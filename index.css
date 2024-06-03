@@ -17,8 +17,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3px;
-  width: 80%;
-  height: 80%;
+  width: 1178px;
+  height: 588px;
 }
 
 .box-one,
@@ -109,6 +109,10 @@ svg {
 }
 
 @media only screen and (max-width: 800px) {
+  .gallery {
+    width: 400px;
+    height: 600px;
+  }
   .gallery img {
     object-fit: cover;
   }
@@ -117,12 +121,16 @@ svg {
   }
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1300px) {
   .contents h1 {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 20px;
     padding-bottom: 20px;
     height: 50px;
+  }
+  .gallery {
+    width: 80%;
+    height: 600px;
   }
 }
