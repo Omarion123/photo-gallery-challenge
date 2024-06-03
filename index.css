@@ -44,6 +44,10 @@ body {
   color: white;
   bottom: 50px;
   left: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .contents h1 {
@@ -61,10 +65,16 @@ body {
 }
 
 .know-more {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+
+.know-more-hovered {
   display: flex;
   color: blue;
   justify-content: start;
   align-items: center;
+  transition: 0.5s ease-in-out;
 }
 
 .know-more p {
@@ -75,17 +85,6 @@ svg {
   width: 20px;
   height: 20px;
 }
-
-/* .gallery .hovered:hover img {
-    background-color: rgba(0, 0, 0, 0.8);
-    filter: blur(8px) brightness(40%);
-    transition: 0.5s ease-in-out;
-}
-
-.gallery .hovered {
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: 0.5s ease-in-out;
-} */
 
 .gallery .images {
   filter: blur(0px) hue(30%) brightness(75%);
