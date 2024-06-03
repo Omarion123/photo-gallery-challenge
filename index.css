@@ -39,8 +39,9 @@ body {
   transition: filter 0.3s ease;
 }
 
-.gallery .contents {
+.contents {
   position: absolute;
+  background-color: red;
   color: white;
   bottom: 50px;
   left: 35px;
@@ -67,15 +68,19 @@ body {
   align-items: center;
 }
 
+.know-more p {
+  color: #01cef0;
+}
+
 svg {
   width: 20px;
   height: 20px;
 }
 
-#images:hover,
-#images:hover,
-#images:hover,
-#images:hover {
+/* .images:hover,
+.images:hover,
+.images:hover,
+.images:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
 }
@@ -84,15 +89,20 @@ svg {
 .box-two:hover,
 .box-three:hover,
 .box-four:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease-in-out;
 }
 
 .box-one:hover img,
 .box-two:hover img,
 .box-three:hover img,
 .box-four:hover img {
-  filter: blur(8px) brightness(40%);
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: 0.3s ease-in-out;
+    filter: blur(8px) brightness(40%);
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease-in-out;
+} */
+
+.gallery .hovered-image {
+  transform: scale(1.1);
+  transition: .5s ease-in;
 }
