@@ -41,7 +41,6 @@ body {
 
 .contents {
   position: absolute;
-  background-color: red;
   color: white;
   bottom: 50px;
   left: 35px;
@@ -77,32 +76,34 @@ svg {
   height: 20px;
 }
 
-/* .images:hover,
-.images:hover,
-.images:hover,
-.images:hover {
+/* .gallery .hovered:hover img {
+    background-color: rgba(0, 0, 0, 0.8);
+    filter: blur(8px) brightness(40%);
+    transition: 0.5s ease-in-out;
+}
+
+.gallery .hovered {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s ease-in-out;
+} */
+
+.gallery .images {
+  filter: blur(0px) hue(30%) brightness(75%);
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+.gallery:hover {
+  cursor: pointer;
+}
+
+.gallery .hovered-image {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
 }
 
-.box-one:hover,
-.box-two:hover,
-.box-three:hover,
-.box-four:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: 0.3s ease-in-out;
-}
-
-.box-one:hover img,
-.box-two:hover img,
-.box-three:hover img,
-.box-four:hover img {
-    filter: blur(8px) brightness(40%);
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: 0.3s ease-in-out;
-} */
-
-.gallery .hovered-image {
-  transform: scale(1.1);
-  transition: .5s ease-in;
+.gallery .hovered:hover img {
+  background-color: rgba(0, 0, 0, 1);
+  filter: blur(8px) grayscale(100%) brightness(20%);
+  transition: 0.3s ease-in-out;
 }
