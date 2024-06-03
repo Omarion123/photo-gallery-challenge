@@ -26,10 +26,8 @@ body {
 .box-three,
 .box-four {
   position: relative;
-}
-
-.gallery div {
-  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .gallery img {
@@ -37,11 +35,60 @@ body {
   height: 100%;
   display: block;
   object-fit: fill; /*for mobile we will use object-fit: cover*/
+  filter: blur(0);
+  transition: filter 0.3s ease;
 }
 
 .gallery .contents {
   position: absolute;
   color: white;
-  bottom: 35px;
+  bottom: 50px;
   left: 35px;
+}
+
+.contents h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  padding-bottom: 20px;
+  height: 50px;
+}
+
+.contents p {
+  font-weight: 300;
+  margin: 5px 0;
+}
+.know-more {
+  display: flex;
+  color: blue;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+#images:hover,
+#images:hover,
+#images:hover,
+#images:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.box-one:hover,
+.box-two:hover,
+.box-three:hover,
+.box-four:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease-in-out;
+}
+
+.box-one:hover img,
+.box-two:hover img,
+.box-three:hover img,
+.box-four:hover img {
+  filter: blur(8px) brightness(40%);
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease-in-out;
 }
