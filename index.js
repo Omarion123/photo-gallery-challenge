@@ -28,3 +28,14 @@ boxes.forEach((box) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const svgTemplate = document.getElementById("svg-template").content;
+  const svgContainers = document.querySelectorAll(".svg-container");
+
+  svgContainers.forEach(container => {
+    const svgClone = document.importNode(svgTemplate, true);
+    container.appendChild(svgClone);
+  });
+});
+
