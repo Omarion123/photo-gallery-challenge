@@ -3,7 +3,12 @@ function stringTransformation(input) {
   if (len > 1 && len > 1000) {
     return "length is invalid";
   }
-  console.log(len);
+
+  // Check for non-alphanumeric characters and spaces
+  if (!/^[a-zA-Z0-9 ]*$/.test(input)) {
+    return "string should be alphanumeric";
+  }
+
   let output = "";
 
   if (len % 3 === 0 && len % 5 === 0) {
@@ -34,7 +39,6 @@ function stringTransformation(input) {
 
   return output;
 }
-
 
 const input = "Hello";
 console.log(stringTransformation(input));
