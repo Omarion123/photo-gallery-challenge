@@ -44,10 +44,7 @@ body {
   color: white;
   bottom: 50px;
   left: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
+  display: inline-block;
   transition: 0.3s ease-in-out;
 }
 
@@ -56,6 +53,12 @@ body {
   font-weight: 800;
   font-size: 30px;
   height: 50px;
+  padding-bottom: 5px;
+}
+
+.contents p,
+.contents h1 {
+  transition: transform 1s ease-in-out;
 }
 
 .countries {
@@ -65,16 +68,30 @@ body {
 }
 
 .know-more {
-  display: none;
-  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.content-container{
+  transform: translateY(+45px);
+  transition: 1s ease-in-out;
+}
+
+.hovered .content-container{
+  transform: translateY(-2px);
+  transition: 1s ease-in-out;
 }
 
 .know-more-hovered {
   display: flex;
-  color: blue;
   justify-content: start;
   align-items: center;
-  transition: 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
 }
 
 .know-more p {
