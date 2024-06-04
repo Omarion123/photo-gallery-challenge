@@ -51,7 +51,7 @@ body {
 .contents h1 {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 25px;
   height: 50px;
   padding-bottom: 5px;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .hovered .content-container{
-  transform: translateY(-2px);
+  transform: translateY(17px);
   transition: 1s ease-in-out;
 }
 
