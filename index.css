@@ -50,15 +50,15 @@ body {
 
 .contents h1 {
   text-transform: uppercase;
-  font-weight: 800;
-  font-size: 25px;
+  font-weight: 1000;
+  font-size: 23px;
   height: 50px;
   padding-bottom: 5px;
 }
 
 .contents p,
 .contents h1 {
-  transition: transform 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .countries {
@@ -73,17 +73,17 @@ body {
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.content-container{
+.content-container {
   transform: translateY(+45px);
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.hovered .content-container{
+.hovered .content-container {
   transform: translateY(17px);
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .know-more-hovered {
