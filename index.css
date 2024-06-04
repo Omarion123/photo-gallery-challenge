@@ -99,6 +99,10 @@ body {
   font-weight: bold;
 }
 
+.svg-container{
+  transform: translateY(3px);
+}
+
 svg {
   width: 20px;
   height: 20px;
